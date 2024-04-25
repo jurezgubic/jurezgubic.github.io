@@ -1,0 +1,37 @@
+/* General body styling */
+body {
+    background-color: #a3c1ad;  /* Mild Cambridge blue */
+    color: #333333;             /* Standard text color for good contrast */
+    font-family: Arial, sans-serif; /* Common, readable font */
+}
+
+/* Styling for the navbar */
+.navbar {
+    background-color: #ffffff;  /* White background for the navbar */
+    padding: 10px 0;            /* Padding around the navbar */
+    overflow: hidden;           /* Clearfix for floated elements */
+    border-bottom: 1px solid #cccccc; /* Subtle separator from content */
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;                /* Align links to the left */
+    color: #333333;             /* Color for the links */
+    text-align: center;         /* Center text inside links */
+    padding: 14px 16px;         /* Padding inside each link */
+    text-decoration: none;      /* Remove underline from links */
+    font-size: 16px;            /* Set a readable font size */
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+    background-color: #dddddd;  /* Light gray background on hover */
+    color: #000000;             /* Black text color on hover */
+}
+
+/* Responsive image styling */
+img {
+    max-width: 100%;            /* Make images responsive */
+    height: auto;               /* Maintain aspect ratio */
+}
+
