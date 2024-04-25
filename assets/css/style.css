@@ -1,23 +1,31 @@
-/* General body styling */
 body {
     background-color: #a3c1ad;  /* Mild Cambridge blue */
     color: #333333;             /* Standard text color for good contrast */
     font-family: Arial, sans-serif; /* Common, readable font */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.header-content {
+    text-align: center;
 }
 
 /* Styling for the navbar */
 .navbar {
-    background-color: #ffffff;  /* White background for the navbar */
-    padding: 10px 0;            /* Padding around the navbar */
-    overflow: hidden;           /* Clearfix for floated elements */
+    width: 100%;
+    background-color: #a3c1ad;  /* Same as body for integration */
+    padding: 10px 0;
+    overflow: hidden;
+    text-align: right;
     border-bottom: 1px solid #cccccc; /* Subtle separator from content */
 }
 
 /* Navbar links */
 .navbar a {
-    float: left;                /* Align links to the left */
     color: #333333;             /* Color for the links */
-    text-align: center;         /* Center text inside links */
     padding: 14px 16px;         /* Padding inside each link */
     text-decoration: none;      /* Remove underline from links */
     font-size: 16px;            /* Set a readable font size */
@@ -29,9 +37,32 @@ body {
     color: #000000;             /* Black text color on hover */
 }
 
-/* Responsive image styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px; /* Space between logos */
+}
+
+.social-links img {
+    width: 50px; /* Set a fixed width for all logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive image styling for all images */
 img {
     max-width: 100%;            /* Make images responsive */
     height: auto;               /* Maintain aspect ratio */
+}
+
+.headshot {
+    width: 150px;               /* Control the size of the image */
+    height: 150px;              /* Maintain aspect ratio */
+    border-radius: 50%;         /* Makes the image circular */
+    object-fit: cover;          /* Ensures the image covers the space properly */
+    margin: 20px 0;             /* Adds space around the image */
 }
 

@@ -1,7 +1,24 @@
-<div class="navbar">
-  <a href="/">Home</a>
-  <a href="/CV.html">CV</a>
-  <a href="/Work.html">Work</a>
-  <a href="/Contact.html">Contact</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title | default: "Jure Zgubic's Professional Site" }}</title>
+    <!-- Cayman theme stylesheet for styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cayman-theme@1.0.0/dist/cayman.css">
+    <!-- Custom stylesheet for additional styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/pages/cv.html">CV</a>
+        <a href="/pages/work.html">Work</a>
+        <a href="/pages/contact.html">Contact</a>
+    </div>
+    <!-- Content injected here -->
+    {{ content }}
+</body>
+</html>
 
